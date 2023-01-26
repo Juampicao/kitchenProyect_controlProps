@@ -13,4 +13,5 @@ You can add controll just inserting "ProductButtons" on the ProductCardFinal chi
 - Reutilizable components.
 
 
-Desarrollado por: Juan Pablo Parada Cao
+Developed by: Juan Pablo Parada Cao
+Linkedin: https://www.linkedin.com/in/paradacao-juanpablo/?originalSubdomain=ar 
