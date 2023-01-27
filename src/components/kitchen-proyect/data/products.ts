@@ -1,9 +1,11 @@
-import pancho from "../assets/img/pancho-image.jpg"
+import { HamburguesaImage, PanchoImage, PapasFritasImage } from "../assets"
 import { Product } from "../interfaces/interfaces"
+
 export const product1 : Product = {
     id: "1",
     title: "Pancho",
-    img: pancho,
+    // img: pancho,
+    img: PanchoImage,
     price: 970
 
 }
@@ -11,14 +13,14 @@ export const product1 : Product = {
 export const product2 : Product = {
     id: "2",
     title: "Hamburguesa",
-    img: "./coffee-mug.png",
+    img: HamburguesaImage,
     price: 1490
 }
 
 export const product3 : Product = {
     id: "3",
-    title: "Ñoquis",
-    img: "./coffee-mug.png",
+    title: "Papas Fritas",
+    img: PapasFritasImage,
     price: 1250
 }
 

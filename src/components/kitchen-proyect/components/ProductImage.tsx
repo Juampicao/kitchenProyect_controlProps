@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { noImage } from "../assets";
 import { ProductContext } from "./ProductCardFinal";
 
+import { noImage } from "../assets";
 import styles from "../styles/styles.module.css";
 
 export interface IProductImageProps{
@@ -30,7 +30,7 @@ export const ProductImage = ({ img = "", alt = "", className, style} : IProductI
 
     return (
         <>
-        <img src={imgToShow} alt={alt ? alt : "no hay alt"} className={`${styles.productImg} ${className}`} style={style} />
+        <img src={imgToShow} alt={product.title ? product.title : "no hay alt"} className={`${styles.productImg} ${className}`} style={style} />
         </>
     )
 }

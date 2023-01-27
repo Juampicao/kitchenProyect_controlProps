@@ -22,12 +22,13 @@ export const ShoppingPage = () => {
         
                     <ProductCardFinal
                         className="bg-dark text-white container"
+               
                         key={product.id}
                         product={product}
                         onChange={onProductCountChange}
                         value={ shoppingCart[product.id]?.count || 0 }
                     >
-                        <ProductImage className="custom-image"/>
+                        <ProductImage />
                         <ProductPrice/>
                         <ProductTitle  className="text-white bg-dark" /> 
                         <ProductButtons className="custom-buttons" />
@@ -69,10 +70,10 @@ export const ShoppingPage = () => {
                 }
             </div>
            
-            <div className="" >
-                <h1> Caja </h1>
-                <hr />
-
+          
+            <h1> Caja </h1>
+            <hr />
+            <div style={({display: "flex", flexDirection: "row", flexWrap: "wrap" })}>
                 {
                     Object.entries( shoppingCart).map(([key, product]) => (
                         
@@ -90,6 +91,7 @@ export const ShoppingPage = () => {
                                 title={product.title}
                             /> 
                             <ProductTotalAmount/>
+                            <ProductImage className="custom-image"/>
                           
                         </ProductCardFinal>
                     ))

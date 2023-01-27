@@ -13,14 +13,30 @@
 }
 
 .productImg {
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
+    width: calc(40% - 20px);
+    border-radius: 3rem;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    transition: transform .2s;
+}
+
+.productImg:hover{
+    transform: scale(1.10);
 }
 
 .productDescription {
     margin: 10px;
 }
 
+
+
+/* Buttons */
+button:hover{
+    transform: scale(1.10);
+    transition: transform .2s;
+
+}
 .buttonsContainer {
     margin: 10px;
     display: flex;

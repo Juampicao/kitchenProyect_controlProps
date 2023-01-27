@@ -21,9 +21,7 @@ export const ProductCardFinal = ({ children, product, className, style, onChange
             product
         }}>
             
-            {/* <div className={`${styles.productCard} ${className}  `} */}
-            <div className={`${styles.productCard} ${className}  `}
-                
+            <div className={`${styles.productCard} ${className}  `}    
                 style={style} 
             >
             {children}
