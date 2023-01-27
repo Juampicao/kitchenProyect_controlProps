@@ -1,9 +1,9 @@
+import pancho from "../assets/img/pancho-image.jpg"
 import { Product } from "../interfaces/interfaces"
-
 export const product1 : Product = {
     id: "1",
     title: "Pancho",
-    img: "./coffee-mug.png",
+    img: pancho,
     price: 970
 
 }

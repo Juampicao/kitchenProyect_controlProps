@@ -1,4 +1,4 @@
-import { ProductButtons, ProductCardFinal, ProductTitle, ProductTotalAmount } from "../components";
+import { ProductButtons, ProductCardFinal, ProductImage, ProductTitle, ProductTotalAmount } from "../components";
 import { ProductPrice } from "../components/ProductPrice";
 import { products } from "../data/products";
 import { useShoppingCart } from "../hooks/useShoppingCart";
@@ -13,7 +13,7 @@ export const ShoppingPage = () => {
     
 
   return (
-        <div className="container">
+      <div className="container">
             <h1> Mozo</h1>
             <hr />
             <div style={({display: "flex", flexDirection: "row", flexWrap: "wrap" })}>
@@ -27,7 +27,7 @@ export const ShoppingPage = () => {
                         onChange={onProductCountChange}
                         value={ shoppingCart[product.id]?.count || 0 }
                     >
-                        {/* <ProductImage className="custom-image"/> */}
+                        <ProductImage className="custom-image"/>
                         <ProductPrice/>
                         <ProductTitle  className="text-white bg-dark" /> 
                         <ProductButtons className="custom-buttons" />
