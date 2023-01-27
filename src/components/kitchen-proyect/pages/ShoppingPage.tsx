@@ -14,7 +14,7 @@ export const ShoppingPage = () => {
 
   return (
       <div className="container">
-            <h1> Mozo</h1>
+            <h1> Mozo Edit</h1>
             <hr />
             <div style={({display: "flex", flexDirection: "row", flexWrap: "wrap" })}>
                                 
